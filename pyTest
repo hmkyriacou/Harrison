@@ -1,0 +1,5 @@
+inNum = int(input("Enter a number: "))
+if (inNum < 10):
+    print("Not less than 10")
+else:
+    print("10 or greater")

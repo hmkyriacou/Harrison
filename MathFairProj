@@ -1,0 +1,14 @@
+import random
+import matplotlib.pyplot as plt
+def f(x):
+    res = x * 25 + 3
+    error = res * random.uniform(-0.01, 0.01)
+    return res + error
+values = []
+for i in range(0, 300):
+    x = random.uniform(1, 1000)
+    y = f(x)
+    values.append((x, y))
+
+plt.scatter(x, y, color='blue')
+plt.title('Linear Random Data', fontsize=13)
